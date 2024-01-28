@@ -1,7 +1,7 @@
 :root {
-    --button-color: #007bff;
-    --button-color-hover: #0069d9;
-    --button-color-active: #0062cc;
+    --button-color: #319f66;
+    --button-color-hover: #3bbf7b;
+    --button-color-active: #1f6641;
     --button-padding: 5px 10px;
     --button-border-radius: 3px;
     --button-z-index: 1001;
@@ -27,7 +27,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0;
+    padding: 10px;
+
+    svg {
+        fill: white;
+    }
 
     &:hover {
         background-color: var(--button-color-hover);
