@@ -5,8 +5,8 @@
     --button-padding: 5px 10px;
     --button-border-radius: 3px;
     --button-z-index: 1001;
-    --chat-window-width: 480px;
-    --chat-window-height: 540px;
+    --chat-window-width: 360px;
+    --chat-window-height: 480px;
 }
 
 /* Chat button styling */
@@ -45,13 +45,14 @@
 /* Chat window styling */
 #chatgpt-chat-window {
     position: fixed;
-    bottom: calc(var(--chat-window-height) / 5);
+    bottom: 100px;
     right: 20px;
     width: var(--chat-window-width);
     height: var(--chat-window-height);
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    overflow: hidden;
     display: none;
     z-index: var(--button-z-index);
     flex-direction: column;
